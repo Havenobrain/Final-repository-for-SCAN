@@ -1,6 +1,5 @@
 
 import css from "./profi-doc.module.css";
-import photo1 from "../../assets/img/photo1.svg";
 import { ScanDoc } from "./scan-doc";
 import { useEffect, useState } from 'react';
 

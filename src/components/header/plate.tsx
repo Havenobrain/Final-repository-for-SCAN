@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { apiProvider } from "../../api-provider/api-provider";
 import css from "./plate.module.css";
 import spinner from "../../assets/img/spinner.png";

@@ -7,13 +7,12 @@ import { NumericField } from "../../components/ui/numeric-field/numeric-field";
 import { RangePicker } from "../../components/ui/range-picker/range-picker";
 import { initialData } from "../result-page/use-payload";
 import { useImmer } from "use-immer";
-import { apiProvider } from "../../api-provider/api-provider";
-import { HistogramsResponse } from "../../api-provider/histograms-payload";
+
 
 export function SearchPage() {
     const [payload, updatePayload] = useImmer(initialData);
-    const [error, setError] = useState<string | null>(null);
-    const [loading, setLoading] = useState<boolean>(false);
+    const [error] = useState<string | null>(null);
+    const [loading] = useState<boolean>(false);
     const navigate = useNavigate();
 
     const isDisabled = () => {
